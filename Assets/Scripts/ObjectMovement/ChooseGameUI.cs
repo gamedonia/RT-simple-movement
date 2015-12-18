@@ -49,7 +49,7 @@ public class ChooseGameUI : MonoBehaviour {
 		gdRt.eventsDispatcher.AddEventListener (GamedoniaEvents.ON_JOIN_ROOM_SUCCESS, OnJoinRoomSuccess);
 		gdRt.eventsDispatcher.AddEventListener (GamedoniaEvents.ON_JOIN_ROOM_ERROR, OnJoinRoomError);
 		gdRt.eventsDispatcher.AddEventListener (GamedoniaEvents.ON_ROOM_ADDED_TO_GROUP, OnRoomAddedToGroup);
-		gdRt.eventsDispatcher.AddEventListener (GamedoniaEvents.ON_USERS_IN_ROOMS_CHANGED, OnRoomAddedToGroup); //Mismo callback porque solo hay que repintar
+		gdRt.eventsDispatcher.AddEventListener (GamedoniaEvents.ON_USERS_IN_ROOMS_CHANGED, OnRoomAddedToGroup); // Same callback, we just refresh
 		gdRt.eventsDispatcher.AddEventListener (GamedoniaEvents.ON_ROOM_WAS_CLOSED, OnRoomAddedToGroup);
 
 		PrintRoomsList ();

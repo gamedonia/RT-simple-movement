@@ -128,7 +128,7 @@ public class ConnectionUI : MonoBehaviour {
 
 	void OnConnectionSuccess(Gamedonia.Rt.Events.Event evt) {
 
-		Debug.Log ("Connectado!!");
+		Debug.Log ("Connected!!");
 
 		LoginOperation lop = new LoginOperation();
 		System.Random rnd = new System.Random();
@@ -153,7 +153,7 @@ public class ConnectionUI : MonoBehaviour {
 
 	void OnLoginSuccess(Gamedonia.Rt.Events.Event evt) {
 		
-		Debug.Log ("Logado!!");
+		Debug.Log ("Logged in!!");
 
 		//Creamos la room
 		long gameRoomId = GamedoniaRT.SharedInstance().roomsManager.GetRoomIdByName("DefaultRoom");
